@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#24102b" />
+  <title>HuD Events — Global</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="HuD Events home">
+      <span class="brand-mark logo-mark" aria-hidden="true"><img src="assets/hud-logo.png" alt="" /></span>
+      <span class="brand-copy">
+        <strong>The HuD Group</strong>
+        <small>GLOBAL · EVENTS</small>
+      </span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <label class="header-country" for="headerCountry">
+        <span>Country</span>
+        <select id="headerCountry" aria-label="Choose event country"></select>
+      </label>
+      <a href="#events">Events</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About HuD</a>
+      <a class="nav-cta" href="#events">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="grid-overlay"></div>
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><span class="pulse"></span> <span id="heroCountryLabel">HuD Events · Sierra Leone</span></span>
+        <h1>Gather. Grow.<br><em>Lead with impact.</em></h1>
+        <p>A dedicated global home for HuD events — choose your country, discover transformational gatherings, reserve your seat and complete registration in one smooth experience.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#events">Explore events <span>↗</span></a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>24</strong><span>Countries</span></div>
+          <div><strong>1</strong><span>Global movement</span></div>
+          <div><strong>∞</strong><span>Potential impact</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="glass-window">
+          <div class="window-bar"><span></span><span></span><span></span><small>hud.events</small></div>
+          <div class="spotlight-card">
+            <img src="assets/A++flyer.png" alt="A++ Seminar event poster" />
+            <div class="spotlight-overlay">
+              <span class="status live">Registration open</span>
+              <h3>A++ Seminar</h3>
+              <p>Faith & Excellence</p>
+              <div class="event-mini-meta"><span>12 Sep 2026</span><span>10:00 AM</span></div>
+              <button class="mini-register" data-event="a-seminar">Reserve seat</button>
+            </div>
+          </div>
+          <div class="activity-row">
+            <span class="activity-icon">✓</span>
+            <div><strong>Fast event registration</strong><small>Simple, mobile-first attendee flow</small></div>
+          </div>
+          <div class="activity-row">
+            <span class="activity-icon">₦</span>
+            <div><strong>Local payment ready</strong><small>Designed for Monime integration</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>INSPIRE</span><i></i><span>EQUIP</span><i></i><span>CONNECT</span><i></i><span>DEPLOY</span>
+    </section>
+
+    <section class="events-section" id="events">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">Event directory</span><h2>What’s happening at HuD</h2><p class="country-summary" id="countrySummary">Showing events in Sierra Leone</p></div>
+        <div class="directory-controls">
+          <label class="country-picker" for="countrySelect"><span>Country</span><select id="countrySelect" aria-label="Choose a country to view events"></select></label>
+          <div class="filters" role="group" aria-label="Filter events">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="upcoming">Upcoming</button>
+          <button class="filter" data-filter="past">Past</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-grid">
+        <article class="event-card featured reveal" data-status="upcoming" data-country="Sierra Leone">
+          <div class="poster-wrap"><img src="assets/a-seminar.jpg" alt="A++ Seminar: Faith & Excellence" /><span class="status live">Upcoming</span></div>
+          <div class="event-content">
+            <div class="event-date-badge"><strong>12</strong><span>SEP<br>2026</span></div>
+            <div class="event-copy">
+              <p class="event-type">SEMINAR · SIERRA LEONE</p>
+              <h3>A++ Seminar</h3>
+              <p>Theme: <strong>Faith & Excellence</strong>. A focused gathering designed to inspire excellence grounded in faith.</p>
+              <div class="event-info"><span>◷ 10:00 AM</span><span>⌖ God Is Our Light Church H/Q</span></div>
+              <div class="price-row"><div><small>Ticket</small><strong>NLe 40</strong></div><button class="btn btn-primary register-btn" data-event="a-seminar">Register now <span>→</span></button></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card reveal delay-1" data-status="past" data-country="Sierra Leone">
+          <div class="poster-wrap tall"><img src="assets/sex-sense.jpg" alt="Sex Sense Seminar poster" /><span class="status ended">Past event</span></div>
+          <div class="event-content">
+            <div class="event-date-badge muted"><strong>14</strong><span>FEB<br>2026</span></div>
+            <div class="event-copy">
+              <p class="event-type">SEMINAR · SIERRA LEONE</p>
+              <h3>Sex Sense Seminar</h3>
+              <p>A previous HuD Sierra Leone seminar hosted at Victory Baptist Church, Fudia Terrace, Stone Ground.</p>
+              <div class="event-info"><span>◷ 10:00 AM</span><span>⌖ Victory Baptist Church</span></div>
+              <div class="price-row"><div><small>Ticket was</small><strong>NLe 30</strong></div><button class="btn btn-disabled" disabled>Event ended</button></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="event-empty" id="eventEmpty" hidden>
+        <span class="empty-icon">◎</span>
+        <h3>No sample events for this country yet.</h3>
+        <p>This demo currently contains Sierra Leone event data. In the live platform, each HuD country chapter would publish and manage its own events here.</p>
+        <button class="btn btn-primary" id="viewSierraLeone" type="button">View Sierra Leone sample events</button>
+      </div>
+    </section>
+
+    <section class="flow-section" id="how">
+      <div class="flow-copy reveal">
+        <span class="eyebrow">Built around conversion</span>
+        <h2>From discovery to a confirmed seat in minutes.</h2>
+        <p>The demo keeps the attendee journey intentionally simple. In production, Monime can be connected behind the payment step while HuD manages registrations through an admin dashboard.</p>
+        <button class="btn btn-light register-btn" data-event="a-seminar">Try the registration demo <span>→</span></button>
+      </div>
+      <div class="steps reveal delay-1">
+        <div class="step"><span>01</span><div><h3>Discover</h3><p>See upcoming events, dates, venues and ticket prices.</p></div></div>
+        <div class="step"><span>02</span><div><h3>Register</h3><p>Enter attendee details in a clean mobile-friendly form.</p></div></div>
+        <div class="step"><span>03</span><div><h3>Pay</h3><p>Choose a Sierra Leonean payment method through Monime.</p></div></div>
+        <div class="step"><span>04</span><div><h3>Confirm</h3><p>Receive a reference and event confirmation immediately.</p></div></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-card reveal">
+        <span class="eyebrow">The Human Development Group</span>
+        <h2>People of godly influence, making impact in every sphere.</h2>
+        <p>The HuD Group is an international Christian not-for-profit network focused on the holistic development of emerging and established leaders. This event experience is designed as an extension of that mission — modern, welcoming and built to connect people to transformative programmes.</p>
+        <a class="text-link" href="https://thehudgroupglobal.org/" target="_blank" rel="noreferrer">Visit the main HuD website ↗</a>
+      </div>
+      <div class="quote-card reveal delay-1">
+        <div class="quote-mark">“</div>
+        <p>Engage hearts.<br>Enlighten heads.<br>Empower hands.</p>
+        <small>HuD mission language</small>
+      </div>
+    </section>
+
+    <section class="cta-section reveal">
+      <div><span class="eyebrow">Next event</span><h2>Ready for A++ Seminar?</h2><p>12 September 2026 · 10:00 AM · Freetown</p></div>
+      <button class="btn btn-primary register-btn" data-event="a-seminar">Reserve your seat <span>↗</span></button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark logo-mark small"><img src="assets/hud-logo.png" alt="" /></span><div><strong>The HuD Group</strong><small>Global Events</small></div></div>
+    <p>Demo event-registration concept · Front-end prototype only.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="modal" id="registrationModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div class="modal-progress"><span class="active"></span><span></span><span></span></div>
+      <div class="form-step active" data-step="1">
+        <span class="eyebrow">Step 1 of 3</span>
+        <h2 id="modalTitle">Register for A++ Seminar</h2>
+        <p class="modal-sub">12 September 2026 · 10:00 AM · NLe 40</p>
+        <form id="registrationForm">
+          <label>Full name<input required id="fullName" type="text" placeholder="e.g. Abu Bakarr Kanu" /></label>
+          <div class="form-row"><label>Phone number<input required type="tel" placeholder="+232 7X XXX XXX" /></label><label>Email<input required type="email" placeholder="you@example.com" /></label></div>
+          <label>Organisation / School <span>(optional)</span><input type="text" placeholder="Where do you work or study?" /></label>
+          <button class="btn btn-primary full" type="submit">Continue to payment <span>→</span></button>
+        </form>
+      </div>
+
+      <div class="form-step" data-step="2">
+        <span class="eyebrow">Step 2 of 3</span>
+        <h2>Choose how you’ll pay</h2>
+        <p class="modal-sub">Demo only — no payment will be processed.</p>
+        <div class="payment-summary"><span>A++ Seminar · 1 ticket</span><strong>NLe 40.00</strong></div>
+        <div class="payment-options">
+          <button class="payment-option selected"><span class="pay-icon">M</span><span><strong>Mobile Money</strong><small>Orange Money / Afrimoney / supported wallets</small></span><b>✓</b></button>
+          <button class="payment-option"><span class="pay-icon">⌁</span><span><strong>Other Monime method</strong><small>Additional supported payment option</small></span><b>✓</b></button>
+        </div>
+        <div class="secure-note">◉ Secure payment would be handled through Monime in the live build.</div>
+        <button class="btn btn-primary full" id="payDemo">Pay NLe 40.00 <span>→</span></button>
+      </div>
+
+      <div class="form-step success-step" data-step="3">
+        <div class="success-icon">✓</div>
+        <span class="eyebrow">Registration complete</span>
+        <h2>Your seat is reserved.</h2>
+        <p class="modal-sub">This is a demo confirmation showing the intended attendee experience.</p>
+        <div class="ticket-card">
+          <div><small>EVENT</small><strong>A++ Seminar</strong></div>
+          <div class="ticket-grid"><span><small>ATTENDEE</small><strong id="ticketName">Guest</strong></span><span><small>DATE</small><strong>12 SEP 2026</strong></span><span><small>TIME</small><strong>10:00 AM</strong></span><span><small>REFERENCE</small><strong id="ticketRef">HUD-DEMO-001</strong></span></div>
+          <div class="barcode"></div>
+        </div>
+        <button class="btn btn-light full" data-close>Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
